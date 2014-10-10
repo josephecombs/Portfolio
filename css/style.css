@@ -1,0 +1,518 @@
+/* 
+
+	RESET STYLES
+	
+*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+html { height:100%; font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+::-moz-selection { background: #dddddd; color: #000000; text-shadow: none; }
+::selection { background: #dddddd; color: #000000; text-shadow: none; }
+
+a { color: #000000; }
+a:visited { color: #000000; }
+a:hover { color: #5a5a5a; }
+a:active { color: #222222; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+b, strong { font-weight: bold; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ul, ol { margin: 0; padding: 0; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+
+
+
+
+
+/*
+
+	MAIN STYLING
+
+*/
+
+
+
+html, body {
+	background-color: #ffffff;
+	height:100%;
+	font:15px Georgia, serif;
+	color:#252525;
+}
+
+#background {
+	height:100%;
+	width:1205px;
+	margin: 0px auto 0px auto;
+	z-index:1;
+}
+	#background div {
+		position:fixed;
+		top:0;
+		width: 200px;
+		height: 100%;
+		margin-right:1px;
+		background-color: #f7f7f8;
+	}
+	#background #b-portfolio {
+		margin-left:201px;
+	}
+	#background #b-about {
+		margin-left:402px;
+	}
+	#background #b-contact {
+		margin-left:603px;
+	}
+	#background #b-inspiration {
+		margin-left:804px;
+	}
+	#background #b6 {
+		margin-left:1005px;
+	}
+	#background .b_active {
+	    background-color: #f0f1f2;
+	}
+
+
+#container {
+	position:absolute;
+	width:100%;
+	top:0;
+	z-index:10;
+	background: url(../img/top-line.gif) repeat-x;
+}
+
+
+#top {
+	position:relative;
+	width:1205px;
+	margin: 0px auto 0px auto;
+	padding-top:60px;
+	text-align:center;
+}
+
+	#top li {
+		text-align:left;
+		float:left;
+		width:200px;
+		height:51px;
+		margin:50px 1px 0px 0px;
+		border-top:2px #3e3e3e solid;
+		border-bottom:1px #e9e9ea solid;
+		display:block;
+		-webkit-transition: all 0.25s ease-in-out;
+   		-moz-transition: all 0.25s ease-in-out;
+   		-o-transition: all 0.25s ease-in-out;
+   		-ms-transition: all 0.25s ease-in-out;
+   		transition: all 0.25s ease-in-out;
+	}
+		#top li:hover {
+			border-top:2px #000000 solid;
+			border-bottom:1px #dddedf solid;
+		}
+		#top li:hover a {
+			color: #000000;
+		}
+
+    #top li a {
+        display:block;
+        color: #3e3e3e;
+        text-decoration:none;
+        margin:11px 0px 0px 20px;
+        letter-spacing:1px;
+        -webkit-transition: color 0.25s ease-in-out;
+        -moz-transition: color 0.25s ease-in-out;
+        -o-transition: color 0.25s ease-in-out;
+        -ms-transition: color 0.25s ease-in-out;
+        transition: color 0.25s ease-in-out;
+    }
+	
+	#top #l1 {
+		border-top:2px #eaeaeb solid;
+	}
+	#top #l6 {
+		border-top:2px #eaeaeb solid;
+		margin-right:0px;
+	}
+	#top li.active {
+		border-top:2px #000000 solid;
+		border-bottom:1px #dddedf solid;
+	}
+
+	
+	#top li.active a {
+		color:#000000;
+	}
+	
+	#top span {
+		color:#999999;
+		display:block;
+		font-style:italic;
+		font-size: 10px;
+		margin:1px 0 0 0;
+	}
+	
+
+#cases {
+	width:1205px;
+	position:relative;
+	margin:225px auto 0px auto;
+	display:none;
+}
+	#description {
+		width:762px;
+		background:url(../img/description-bg.png);
+		float:right;
+		padding: 50px 20px 50px 60px;
+		position:absolute;
+		top: 0px;
+		left:363px;
+		margin-top:44px;
+	}
+		#description h1 {
+			margin:0;
+			font-size: 26px;
+			font-weight: normal;
+			color: #000000;
+		}
+		#description p.live {
+			margin:4px 0 0 0;
+			font-size: 13px;
+			font-style:italic;
+		}
+		#description p {
+			margin:20px 0 0 0;
+			line-height:1.7;
+			width:525px;
+			text-align:justify;
+			float:left;
+		}
+		
+		#description span.indent {
+			float:left;
+			width:20px;
+		}
+		#description section {
+			float:right;
+			width:180px;
+		}
+			#description section p {
+				width:180px;
+			}
+			#description section p span {
+				display:block;
+				font-size:11px;
+				font-style: italic;
+				width:180px;
+				line-height:1.5;
+				margin-top:2px;
+			}
+			#description section p.credits {
+				font-style:italic;
+				margin-top:30px;
+			}
+				#description section p.credits a {
+					display: block;
+					font-size: 12px;
+					font-style:normal;
+					width:180px;
+				}
+				#description section p.credits span {
+					display:block;
+					font-size:11px;
+					width:180px;
+					line-height:1.5;
+					margin:0 0 10px 0;
+				}
+	#images img {
+		margin:25px 20px;
+	}
+		#images img.first {
+			margin: 100px 0 100px 8px;
+			float:left;
+		}
+		
+		
+		
+	#textpage h1 {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 30px;
+		font-weight: normal;
+		color: #000000;
+		text-indent: -999px;
+		overflow:hidden;
+		margin:0;
+	}
+	#textpage p {
+		size: 15px;
+		line-height:1.7;
+		text-align: justify;
+	}
+	#textpage p.quote {
+		font-style: italic;
+	}
+	#textpage span.indent {
+		float:left;
+		width:20px;
+	}
+		#textpage #beliefs {
+			margin-left:402px;
+			padding: 0 60px 0 20px;
+			width:522px;
+		}
+			#textpage #beliefs h1 {
+				background:url(../img/textpage/beliefs.gif) no-repeat;
+			}
+		
+		#textpage #about {
+			margin:100px 0 0 201px;
+			padding: 0 60px 0 20px;
+			width:522px;
+		}
+			#textpage #about h1 {
+				background:url(../img/textpage/about.gif) no-repeat;
+			}
+		
+		#textpage #awards {
+			margin:100px 0 0 804px;
+			padding: 0 60px 0 20px;
+			width:321px;
+		}
+			#textpage #awards h1 {
+				background:url(../img/textpage/awards.gif) no-repeat;
+			}
+			#textpage #awards p span.year {
+				color: #7b7b7b;
+				font-size: 12px;
+				padding-top:4px;
+				float:left;
+				width:44px;
+				font-style:normal;
+			}
+			#textpage #awards p em {
+				display:block;
+				margin: -4px 0 0 44px;
+				font-size:12px;
+				font-weight: normal;
+				font-style: italic;
+			}
+			#textpage #awards p.others {
+				text-align:left;
+				margin-top:20px;
+			}
+			#textpage #awards p span {
+				color:#000000;
+				display:block;
+				font-style:italic;
+				font-size:12px;
+			}
+		
+		#textpage #contact {
+			margin: 0 0 0 402px;
+			padding: 0 60px 0 20px;
+			width:522px;
+		}
+			#textpage #contact h1 {
+				background:url(../img/textpage/contact.gif) no-repeat;
+			}
+			#textpage #contact a.tel {
+				color:#000000;
+				text-decoration:none;
+			}
+				#textpage #contact a.tel:hover {
+					color:#000000;
+				}
+			#textpage #contact p.socialmedia {
+				margin-top:40px;
+				font-style:italic;
+			}
+		
+
+
+
+#grid {
+	width:1207px;
+	position:relative;
+	margin: 225px auto 0px auto;
+}
+	#thumb {
+		width:361px;
+		height:220px;
+		overflow:hidden;
+		float:left;
+		margin:10px 20px 1px 21px;
+	}
+		#thumb a {
+			text-decoration:none;
+			position: relative;
+		}
+			#thumb a:hover .thumbhover {
+				opacity:1;
+				margin-top:0px;
+			}
+		#thumb .left {
+			-moz-transform:rotate(3deg);
+			-webkit-transform:rotate(3deg);
+			-o-transform:rotate(3deg);
+			transform:rotate(3deg);
+			width:400px;
+			height:200px;
+			margin:10px 0 0 -20px;
+			overflow:hidden;
+			outline: 1px solid transparent;
+		}
+		#thumb .left-container {
+			-moz-transform:rotate(-3deg);
+			-webkit-transform:rotate(-3deg);
+			-o-transform:rotate(-3deg);
+			transform:rotate(-3deg);
+			width:361px;
+			height:220px;
+			margin:-10px 0 0 20px;
+			outline: 1px solid transparent;
+		}
+		
+		#thumb .right {
+			-moz-transform:rotate(-3deg);
+			-webkit-transform:rotate(-3deg);
+			-webkit-translateZ(0);
+			-o-transform:rotate(-3deg);
+			transform:rotate(-3deg);
+			width:400px;
+			height:200px;
+			margin:10px 0 0 -20px;
+			overflow:hidden;
+			outline: 1px solid transparent;
+		}
+		#thumb .right-container {
+			-moz-transform:rotate(3deg);
+			-webkit-transform:rotate(3deg);
+			-o-transform:rotate(3deg);
+			transform:rotate(3deg);
+			width:361px;
+			height:220px;
+			margin:-10px 0 0 20px;
+			outline: 1px solid transparent;
+		}
+		
+		
+		.thumbhover {
+			width:361px;
+			height:220px;
+			background:url(../img/thumb-hover.png) no-repeat;
+			position:absolute;
+			top:-100px;
+			z-index:100;
+			text-align:center;
+			color:#ffffff;
+			font-style:italic;
+			text-shadow:0px 1px #057b69;
+			padding-top:100px;
+			margin:15px 0 0 0;
+			opacity:0;
+			-webkit-transition: all 0.25s ease-in-out;
+   			-moz-transition: all 0.25s ease-in-out;
+   			-o-transition: all 0.25s ease-in-out;
+   			-ms-transition: all 0.25s ease-in-out;
+   			transition: all 0.25s ease-in-out;
+		}
+			.thumbhover span {
+				opacity:0.9;
+				display:block;
+				font-size:12px;
+				margin-top:5px;
+			}
+			
+	#footermargin {
+		clear:both;
+	    width:1207px;
+	    height: 50px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+}
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
