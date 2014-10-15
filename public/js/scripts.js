@@ -96,13 +96,14 @@ $(document).ready(function() {
         }, 900, "easeInOutQuart");
         
         $("#cases").delay(900).fadeIn(500);
-
+		
         $("#grid").delay(920).animate({
             marginTop: topmargin,
             opacity: "1"
         },200 );
-        caseopen = "yes"
+        caseopen = "yes";
     }
+	
     function gridCaseOpen(){
         $("#grid").animate({
             marginTop: "2000px",
@@ -117,8 +118,8 @@ $(document).ready(function() {
     
     function closeCase(scrollTo){
         $('html, body').animate({scrollTop:scrollTo}, 500);
-        $("#cases").animate({opacity:"0"}, 500)
-        caseopen = "no"
+        $("#cases").animate({opacity:"0"}, 500);
+        caseopen = "no";
     }
     
     function gotoIndex(){
@@ -177,7 +178,7 @@ $(document).ready(function() {
 	        loadThis = "#b" + loadThis.substring(2);
 			$(loadThis).addClass("b_active");
 	        hoverEffects();
-       }
+    	}
         
         loadThis = loadThis.substring(3);
         window.location.hash = loadThis;
@@ -189,20 +190,25 @@ $(document).ready(function() {
 			loadThis = "pages/" + loadThis + ".html";
 			if(caseopen == "yes"){
 				closeCase(0);
-				caseopen = "yes"
+				caseopen = "yes";
 				gridCaseOpen();
 				setTimeout(function() {
 	                $("#cases").load(loadThis, function(){
+						console.log("secondary case load");
 	                    $("#cases").animate({opacity:"1"}, 500);
 	                });
 	            },550);
 			}
 			else {
-				$("#cases").load(loadThis, function(){
-                    openCase(0);
-                    $("#cases").animate({opacity:"1"}, 500);
-                    caseopen = "yes"
-                });
+				
+				setTimeout(function() {
+					$("#cases").load(loadThis, function(){
+	                    openCase(0);
+						console.log("initial case load");
+	                    $("#cases").animate({opacity:"1"}, 500);
+	                    caseopen = "yes";
+	                });
+	            },550);
 			}
 		}
     })
@@ -212,6 +218,7 @@ $(document).ready(function() {
     $("a.caselink").click(function(e) {
         e.preventDefault();
         var loadThis = $(this).attr('rel');
+		debugger;
         loadThis = "cases/" + loadThis + ".html";
         if(!($("#l-portfolio").hasClass("active"))){
         	$("div.b_active").animate({backgroundColor: '#f7f7f8'}, 100);
@@ -222,7 +229,7 @@ $(document).ready(function() {
         }
         if (caseopen == "yes") {
             closeCase(302);
-            caseopen = "yes"
+            caseopen = "yes";
             gridCaseOpen();
             setTimeout(function() {
                 loadThis = loadThis + ".html";
@@ -253,7 +260,7 @@ $(document).ready(function() {
         var ypos = $(window).scrollTop() / 3.6 - 40;
         $("#description").animate({
             marginTop: ypos,
-        },1 );Â 
+        },1 );
         
         var scrollTopValue = $(window).scrollTop();
         var tiltGrid = 3 * Math.cos(scrollTopValue / 60 );
@@ -261,7 +268,7 @@ $(document).ready(function() {
         $("div.left").css({ WebkitTransform: 'rotate(' + tiltGrid + 'deg)'}).css({ '-moz-transform': 'rotate(' + tiltGrid + 'deg)'}).css({ '-o-transform': 'rotate(' + tiltGrid + 'deg)'}).css({ 'transform': 'rotate(' + tiltGrid + 'deg)'});  
         $("div.right-container").css({ WebkitTransform: 'rotate(' + tiltGrid + 'deg)'}).css({ '-moz-transform': 'rotate(' + tiltGrid + 'deg)'}).css({ '-o-transform': 'rotate(' + tiltGrid + 'deg)'}).css({ 'transform': 'rotate(' + tiltGrid + 'deg)'});  
         
-        tiltGrid = -tiltGrid
+        tiltGrid = -tiltGrid;
         
         $("div.right").css({ WebkitTransform: 'rotate(' + tiltGrid + 'deg)'}).css({ '-moz-transform': 'rotate(' + tiltGrid + 'deg)'}).css({ '-o-transform': 'rotate(' + tiltGrid + 'deg)'}).css({ 'transform': 'rotate(' + tiltGrid + 'deg)'});  
         $("div.left-container").css({ WebkitTransform: 'rotate(' + tiltGrid + 'deg)'}).css({ '-moz-transform': 'rotate(' + tiltGrid + 'deg)'}).css({ '-o-transform': 'rotate(' + tiltGrid + 'deg)'}).css({ 'transform': 'rotate(' + tiltGrid + 'deg)'});  
@@ -270,5 +277,4 @@ $(document).ready(function() {
     
     $(window).scroll(onWindowScroll);
  
- 
- });
+ }); 

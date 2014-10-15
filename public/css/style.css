@@ -171,8 +171,10 @@ html, body {
 	display:none;
 }
 	#description {
-		width:762px;
-		background:url(../img/description-bg.png);
+		width:762px;	
+/*		background:url(../img/description-bg.png);*/
+		background-color: white;
+		opacity: .8;
 		float:right;
 		padding: 50px 20px 50px 60px;
 		position:absolute;
