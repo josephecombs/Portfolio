@@ -252,7 +252,6 @@ html, body {
 		font-size: 30px;
 		font-weight: normal;
 		color: #000000;
-		text-indent: -999px;
 		overflow:hidden;
 		margin:0;
 	}
@@ -273,28 +272,20 @@ html, body {
 			padding: 0 60px 0 20px;
 			width:522px;
 		}
-			#textpage #beliefs h1 {
-				background:url(../img/textpage/beliefs.gif) no-repeat;
-			}
 		
 		#textpage #about {
 			margin:100px 0 0 201px;
 			padding: 0 60px 0 20px;
 			width:522px;
 		}
-			#textpage #about h1 {
-				background:url(../img/textpage/about.gif) no-repeat;
-			}
-		
-		#textpage #awards {
-			margin:100px 0 0 804px;
+
+		#textpage #interests {
+			margin:100px 0 0 600px;
 			padding: 0 60px 0 20px;
-			width:321px;
+			width:365px;
 		}
-			#textpage #awards h1 {
-				background:url(../img/textpage/awards.gif) no-repeat;
-			}
-			#textpage #awards p span.year {
+
+			#textpage #interests p span.year {
 				color: #7b7b7b;
 				font-size: 12px;
 				padding-top:4px;
@@ -302,18 +293,18 @@ html, body {
 				width:44px;
 				font-style:normal;
 			}
-			#textpage #awards p em {
+			#textpage #interests p em {
 				display:block;
 				margin: -4px 0 0 44px;
 				font-size:12px;
 				font-weight: normal;
 				font-style: italic;
 			}
-			#textpage #awards p.others {
+			#textpage #interests p.others {
 				text-align:left;
 				margin-top:20px;
 			}
-			#textpage #awards p span {
+			#textpage #interests p span {
 				color:#000000;
 				display:block;
 				font-style:italic;
@@ -459,7 +450,7 @@ html, body {
    ========================================================================== */
 
 /* For image replacement */
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir { display: block; border: 0; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
