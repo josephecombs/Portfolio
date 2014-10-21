@@ -184,7 +184,7 @@ $(document).ready(function() {
         window.location.hash = loadThis;
 		
 		if(loadThis == "inspiration") {
-			window.open("http://twitter.com/wantstobegreat");
+			window.open("http://twitter.com/josephcombs");
 		}
 		else {
 			loadThis = "pages/" + loadThis + ".html";
