@@ -218,7 +218,6 @@ $(document).ready(function() {
     $("a.caselink").click(function(e) {
         e.preventDefault();
         var loadThis = $(this).attr('rel');
-		debugger;
         loadThis = "cases/" + loadThis + ".html";
         if(!($("#l-portfolio").hasClass("active"))){
         	$("div.b_active").animate({backgroundColor: '#f7f7f8'}, 100);
