@@ -316,9 +316,7 @@ html, body {
 			padding: 0 60px 0 20px;
 			width:522px;
 		}
-			#textpage #contact h1 {
-				background:url(../img/textpage/contact.gif) no-repeat;
-			}
+
 			#textpage #contact a.tel {
 				color:#000000;
 				text-decoration:none;

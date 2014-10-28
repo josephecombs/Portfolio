@@ -194,7 +194,6 @@ $(document).ready(function() {
 				gridCaseOpen();
 				setTimeout(function() {
 	                $("#cases").load(loadThis, function(){
-						console.log("secondary case load");
 	                    $("#cases").animate({opacity:"1"}, 500);
 	                });
 	            },550);
@@ -204,7 +203,6 @@ $(document).ready(function() {
 				setTimeout(function() {
 					$("#cases").load(loadThis, function(){
 	                    openCase(0);
-						console.log("initial case load");
 	                    $("#cases").animate({opacity:"1"}, 500);
 	                    caseopen = "yes";
 	                });
