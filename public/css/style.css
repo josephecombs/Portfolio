@@ -174,7 +174,7 @@ html, body {
 		width:762px;	
 /*		background:url(../img/description-bg.png);*/
 		background-color: white;
-		opacity: .8;
+		opacity: 1;
 		float:right;
 		padding: 50px 20px 50px 60px;
 		position:absolute;
